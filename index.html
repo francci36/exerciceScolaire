@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Ma première page HTML</title>
+            <meta charset="utf-8"/>
+            <meta name="description" content="Description de ma première page HTML" />
+            <link rel="stylesheet" href="style.css"/>
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" title="lien vers l'accuei">Acceuil</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1>Ma première page HTML avec une balise h1</h1>
+            <p>Mon premier paragraphe</p>
+            <h2>Titre en h2</h2>
+            <h3>Titre en h3</h3>
+            <h4>Titre en h4</h4>
+            <h5>Titre en h5</h5>
+            <h6>Titre en h6</h6>
+            <p id="para2">
+                Voici un deuxième paragraphe <strong>avec un texte important</strong>
+            </p>
+            <ul>
+                <li class="bleue">élément 1</li>
+                <li class="gris">élément 2</li>
+                <li class="rouge">élément 3</li>
+            </ul>
+            <ol>
+                <li class="vert">élément 1</li>
+                <li class="gris">élément 2</li>
+                <li class="rouge">élément 3</li>
+
+            </ol>
+            <dl>
+                <dt>HTML</dt>
+                <dd>C'est un super langage</dd>
+            </dl>
+            <div class="question">
+                <p>question 1</p>
+                <p class="reponse"> Réponse 1</p>
+            </div>
+            <div class="question">
+                <p>question 2</p>
+                <p class="reponse"> Réponse 2</p>
+
+            </div>
+            <a href="https://www.google.fr"> Lien vers google</a>
+            <a href="mailto:test@test.com">Envoyer un mail</a>
+            <a href="#para2" class="margin">Je vais au paragraphe2</a>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                    </tr>
+                </thead>
+            <tbody>    
+                <tr>
+                    <td>Borges</td>
+                    <td>Corentin</td>
+                </tr>
+                <tr>
+                    <td>DEROCHE</td>
+                    <td>Maxime</td>
+                </tr>
+            </tbody>
+            </table>
+            <form method="post" action="formulaire.php" enctype="multipart/form-data">
+                <input type="text" name="nom" placeholder="votre nom" />
+                <br/>
+                <input type="password" name="mot de passe" placeholder="Votre mot de passe" required/> 
+                <br/>
+                <input type="checkbox" name="cgv" value="oui" required />
+                <label for="cgv">J'accepte les CGV</label>
+                <br/>
+                <label for="newsletter">J'accepte de reccevoir la newsletter</label>
+                <input type="radio" name="newsletter" value="oui" checked="checked"/><label>oui</label>
+                <input type="radio" name="newsletter" value="non"/><label>non</label>
+                <br/>
+                <select name="pays">
+                    <option value="France">France</option>
+                    <option value="angleterre">Angleterre</option>
+                    <option value="allemagne"selected="Selected">Allemagne</option>
+                </select>
+                <select name="liste2" multiple="multiple">
+                    <option value="valeur1">valeur 1</option>
+                    <option value="valeur2">Valeur 2</option>
+                    <option value="valeur3">Valeur 3</option>
+           </select>
+           <textarea name="message" required></textarea>
+           <br/>
+           <input type="file" name="cv"/> 
+           <label for="cv">Votre CV</label>
+           <!--<input type="submit" name="submit" value="Envoyer"/>-->
+           <button type="submit" name="submit">Envoyer</button>
+           <button type="reset" name="reset">Supprimer</button>
+           <button type="button" name="Bouton">Je sers à rien</button>
+            </form>
+            <footer>
+                <div class="col1">
+                    <ul>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="mentions.html">Mentions légales</a></li>                   
+                     </ul>
+
+                </div>
+                <div class="col2">
+                    <ul>
+                        <li><a href="lien1.html" title="lien1">lien 1</a></li>
+                        <li><a href="lien2.html" title="lien2">lien 2</a></li>
+                        <li><a href="lien3.html" title="lien3">lien 3</a></li>
+                        <li><a href="lien4.html" title="lien4">lien 4</a></li>
+                        <li><a href="lien5.html" title="lien5">lien 5</a></li>
+                        <li><a href="lien6.html" title="lien6">lien 6</a></li>
+                    </ul>
+
+                </div>
+                <div class="col3">
+                    <p>Ce site est développé par stagiares de la CCI de Bouges</p>
+
+                </div>
+                
+            
+            </footer>
+        </body>
+    </html>
